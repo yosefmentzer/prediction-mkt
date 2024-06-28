@@ -1,9 +1,9 @@
 # TL;DR
 
-This is an economics research and data science project to test behavioral aspects of traders' actions by assessing a prediction market's semi-strong form efficiency using machine learning.  
+This is an economics research 📚 and data science 📊 project to test behavioral aspects of traders' actions by assessing a prediction market's semi-strong form efficiency using machine learning.  
 
 # Overview
-We study the pricing behavior in the in-play betting market 💰 on the outcomes of soccer matches. ⚽🏟🥅  
+We study the pricing behavior in the in-play betting market 💰 on the outcomes of soccer matches. ⚽  
 A bet price can be understood as the price of a binary option that is worth $1 if team A wins and $0 otherwise.
 In a betting exchange, there are anonymous traders betting on a team to win the match, and other traders betting on the same team to **not** win the match, so it is a zero-sum game (ignoring commissions).  
 The market reacts to news. If a team scores a goal, the probability of the team winning the match increases, so the bet price changes.  
@@ -32,14 +32,14 @@ We then devise an investment strategy based on the model’s predictions and per
 The generation of excess returns would indicate semi-strong form market inefficiency. 
 # Results
 Our model’s results suggest that bettors tend to react conservatively to the goals, and ignite thereby a somewhat slow subsequent market-price update.  
-The portfolios based on the predictions of our machine-learning model generate excessive returns without being riskier than the benchmark, suggesting semi-strong inefficiency in the time window from the moment that the goal was identified in the data, to the next
+The portfolios based on the predictions of our machine-learning model generate excessive returns 💰 without being riskier than the benchmark, suggesting semi-strong inefficiency in the time window from the moment that the goal was identified in the data, to the next
 minute.  
-The image below displays the results of a Monte Carlo simulation where we buy a bet on the team that scored a goal, at the minute when a goal is identified, if the model predicts that the price will go up above a certain threshold at the next minute. We then sell the bet at the next minute.  Note the positive general trend, indicating excessive returns.  
+The image below displays the results of a Monte Carlo simulation where we buy a bet on the team that scored a goal ⚽, at the minute when a goal is identified, if the model predicts that the price will go up 📈 above a certain threshold at the next minute. We then sell the bet at the next minute.  Note the positive general trend, indicating excessive returns.  
 
 <img src="img/mc_result_list_t1t2_strategy_threshold0001.png" width="600">
 
 Further, portfolios based on our model’s predictions do not generate excessive
 returns in the minute subsequent to the goal, suggesting that the inefficiency window lasts
-for about one minute.
+for about one minute. ⏱
 
 # Repo structure
