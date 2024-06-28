@@ -29,7 +29,9 @@ The generation of excess returns would indicate semi-strong form market ineffici
 Our model’s results suggest that bettors tend to react conservatively to the goals, and ignite thereby a somewhat slow subsequent market-price update.  
 The portfolios based on the predictions of our machine-learning model generate excessive returns without being riskier than the benchmark, suggesting semi-strong inefficiency in the time window from the moment that the goal was identified in the data, to the next
 minute.  
-![Alt text](img/mc_result_list_t1t2_strategy_threshold0001.png). 
+The image below displays the results of a Monte Carlo simulation where we buy a bet on the team that scored a goal, at the minute when a goal is identified, if the model predicts that the price will go up above a certain threshold at the next minute. We then sell the bet at the next minute.  Note the positive general trend, indicating excessive returns.  
+
+![Alt text](img/mc_result_list_t1t2_strategy_threshold0001.png){: width="50%"}
 
 Further, portfolios based on our model’s predictions do not generate excessive
 returns in the minute subsequent to the goal, suggesting that the inefficiency window lasts
