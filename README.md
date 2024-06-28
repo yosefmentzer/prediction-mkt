@@ -6,6 +6,11 @@ This is an economics research and data science project to test behavioral aspect
 We study the pricing behavior in the in-play betting market 💰 on the outcomes of soccer matches. ⚽🏟🥅  
 A bet price can be understood as the price of a binary option that is worth $1 if team A wins and $0 otherwise.
 In a betting exchange, there are anonymous traders betting on a team to win the match, and other traders betting on the same team to **not** win the match, so it is a zero-sum game (ignoring commissions).  
+The market reacts to news. If a team scores a goal, the probability of the team winning the match increases, so the bet price changes.  
+The figure below displays prices for the match Sevilla vs.Espanyol, LaLiga(Spain), August19, 2017. Sevilla&mdash;the home team and pre-match favorite&mdash;scored a goal at minute 26 and conceded at minute 35. Note the corresponding jumps in prices.   
+
+<img src="img/sevilla_espanyol.png" width="600">
+
 If the market is semi-strong form efficient, prices should always reflect the probabilities of the team winning, including after major news such as goals, and one should not be able to profit by exploring biases in the prices. So, for instance, bets traded at $0.50 should correspond to the team winning 50% of the time.  
 We check this by devising a prediction model and simulating an investment strategy based on the model's predictions.
 
@@ -31,7 +36,7 @@ The portfolios based on the predictions of our machine-learning model generate e
 minute.  
 The image below displays the results of a Monte Carlo simulation where we buy a bet on the team that scored a goal, at the minute when a goal is identified, if the model predicts that the price will go up above a certain threshold at the next minute. We then sell the bet at the next minute.  Note the positive general trend, indicating excessive returns.  
 
-![Alt text](img/mc_result_list_t1t2_strategy_threshold0001.png){: width="50%"}
+<img src="img/mc_result_list_t1t2_strategy_threshold0001.png" width="600">
 
 Further, portfolios based on our model’s predictions do not generate excessive
 returns in the minute subsequent to the goal, suggesting that the inefficiency window lasts
