@@ -165,7 +165,7 @@ cython_debug/
 .DS_Store
 
 #data folder
-/data
+data/
 
 #betfair credentials
 *credentials.*
