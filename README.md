@@ -45,3 +45,36 @@ for about one minute. ⏱
 
 # Repo structure
 
+the market (background)
+	dedicated readme with more detail on mkt, overround, odds-bin option equivalence (maybe with proof), qualitative introductory info (review thesis)
+
+data extaction
+	code
+	explain what we got
+
+preprocessing (maybe more than 1 folder)
+	review steps
+		team names
+		find matches
+		find goals
+		preprocessing proper
+
+model and simulations (maybe 2 folders)
+
+nalysis/conclusions/final thoughts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
