@@ -1,0 +1,2 @@
+Canada: Canadian teams in the MLS are registered as "CA" in Betfair when they host matches. In Footystats, "US", because Footystatys is league-oriented. So all matches in Canada must be 
+Scotland: In Betfair, there is one general code "GB", including all of GB. In Footystats, "Scotland - league". So all matches in Scottish league must be labeled "GB" to be found in Betfair.
