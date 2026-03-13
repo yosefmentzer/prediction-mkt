@@ -173,3 +173,6 @@ data/
 # README for self
 README-self.*
 
+.idea/
+.virtual_documents/
+bibliography/
