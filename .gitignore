@@ -174,5 +174,6 @@ data/
 README-self.*
 
 .idea/
+.vscode/
 .virtual_documents/
 bibliography/
